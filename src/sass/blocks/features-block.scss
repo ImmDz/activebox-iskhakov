@@ -1,0 +1,104 @@
+.features-block {
+    &__list {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        text-align: center;
+        gap: 5px;
+        @media (max-width: 1024px) {
+            gap: 0;
+        }
+        @media (max-width: 900px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__list-item {
+        max-width: 370px;
+        flex-basis: 32%;
+        padding-top: 200px;
+        position: relative;
+        &:nth-child(1) {
+            &::before {
+                content: "";
+                background-image: url('/src/images/pen.svg');
+                top: 30%;
+                transform:translate(-50%, -50%);
+                width: 76px;
+                height: 76px;
+                position: absolute;
+            }
+        }
+        &:nth-child(2) {
+            &::before {
+                content: "";
+                background-image: url('/src/images/desktop.svg');
+                top: 30%;
+                transform:translate(-50%, -50%);
+                width: 85px;
+                height: 77px;
+                position: absolute;
+            }
+        }
+        &:nth-child(3) {
+            &::before {
+                content: "";
+                background-image: url('/src/images/light-bulb.svg');
+                top: 30%;
+                transform:translate(-50%, -50%);
+                width: 68px;
+                height: 90px;
+                position: absolute;
+            }
+        }
+        &:nth-child(4) {
+            &::before {
+                content: "";
+                background-image: url('/src/images/star.svg');
+                top: 30%;
+                transform:translate(-50%, -50%);
+                width: 80px;
+                height: 77px;
+                position: absolute;
+            }
+        }
+        &:nth-child(5) {
+            &::before {
+                content: "";
+                background-image: url('/src/images/Chech-mark.svg');
+                top: 30%;
+                transform:translate(-50%, -50%);
+                width: 77px;
+                height: 82px;
+                position: absolute;
+            }
+        }
+        &:nth-child(6) {
+            &::before {
+                content: "";
+                background-image: url('/src/images/truck.svg');
+                top: 30%;
+                transform:translate(-50%, -50%);
+                width: 86px;
+                height: 64px;
+                position: absolute;
+            }
+        }
+        @media (max-width: 1024px) {
+            max-width: 290px;
+        }
+        @media (max-width: 900px) {
+            max-width: 100%;
+        }
+    }
+    &__title {
+        text-transform: uppercase;
+        color: #2D3033;
+    }
+    &__paragraph {
+        color: #6C7279;
+        margin-top: 50px;
+    }
+}
