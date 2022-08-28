@@ -1,9 +1,20 @@
 .work-block {
-    margin-top: 120px;
+    margin-top: 134px;
+    @media (max-width: 1024px) {
+        margin-top: 82px;
+    }
+    &__container {
+        max-width: 1510px;
+        margin: 0 auto;
+    }
     &__list {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2px;
+        // display: grid;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        // grid-template-columns: repeat(4, 379px);
+        // grid-template-rows: repeat(2, 340px);
+        gap: 1px;
         list-style: none;
         @media (max-width: 900px) {
             grid-template-columns: repeat(2, 1fr);
@@ -12,34 +23,51 @@
     &__list-item {
         cursor: pointer;
         overflow: hidden;
-        position: relative;      
+        position: relative;
+        width: 376px;
+        height: 338px;
+        &:hover {
+            background-color: #FF4343;
+            transition: 0.5s;
+            transform: scale(1.01);
+        }
+        &:active {
+            background-color: #B90C0C;
+            transition: 0.3s;
+        }
+        &:hover > .work-block__text-img {
+            opacity: 1;
+            transition: 1s;
+        }
+        &:hover > .work-block__item-img {
+            opacity: 0.3;
+            transition: 0.5s linear;
+        }
+        @media (max-width: 1024px) {
+            width: 255px;
+            height: 230px;
+        }
     }
     &__item-img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        &:hover + .work-block__text-img {
-            transition: .8s ease;
-            transform: translateY(0);
-        }  
     }
     &__text-img {
         position: absolute;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        gap: 50px;
+        gap: 36px;
         padding: 10px;
-        top: 0;
+        top: 34%;
+        left: 0;
+        right: 0; 
         color: #fff;
-        z-index: 1;
-        background-color: rgba(255,67,67, 0.8);
-        width: 100%;
-        height: 100%;
-        transform: translateY(-1000px);
+        opacity: 0;
         @media (max-width: 500px) {
             gap: 10px;
+            padding: 0;
         }
     }
     &__title-img {
@@ -47,5 +75,14 @@
     }
     &__title-paragraph {
         text-transform: capitalize;
+    }
+}
+
+@keyframes dropInfo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

@@ -1,14 +1,14 @@
 .features-block {
     &__list {
-        margin-top: 20px;
+        padding-top: 120px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
         list-style: none;
         text-align: center;
-        gap: 5px;
+        row-gap: 92px;
         @media (max-width: 1024px) {
-            gap: 0;
+            row-gap: 90px;
         }
         @media (max-width: 900px) {
             flex-direction: column;
@@ -17,77 +17,115 @@
     }
     &__list-item {
         max-width: 370px;
-        flex-basis: 32%;
-        padding-top: 200px;
+        // flex-basis: 32%;
+        padding-top: 147px;
         position: relative;
         &:nth-child(1) {
             &::before {
                 content: "";
                 background-image: url('/src/images/pen.svg');
-                top: 30%;
-                transform:translate(-50%, -50%);
+                top: 46px;
+                transform: translate(-50%, -50%);
                 width: 76px;
                 height: 76px;
                 position: absolute;
+                @media (max-width: 1024px) {
+                    width: 64px;
+                    height: 64px;
+                    transform: translate(-50%, -119%);
+                    background-image: url('/src/images/pen-tablet.svg');
+                }
             }
+            
         }
         &:nth-child(2) {
             &::before {
                 content: "";
                 background-image: url('/src/images/desktop.svg');
-                top: 30%;
+                top: 46px;
                 transform:translate(-50%, -50%);
                 width: 85px;
                 height: 77px;
                 position: absolute;
+                @media (max-width: 1024px) {
+                    width: 72px;
+                    height: 65px;
+                    transform: translate(-50%, -119%);
+                    background-image: url('/src/images/desktop-tablet.svg');
+                }
             }
         }
         &:nth-child(3) {
             &::before {
                 content: "";
                 background-image: url('/src/images/light-bulb.svg');
-                top: 30%;
+                top: 46px;
                 transform:translate(-50%, -50%);
                 width: 68px;
                 height: 90px;
                 position: absolute;
+                @media (max-width: 1024px) {
+                    width: 57px;
+                    height: 76px;
+                    transform: translate(-50%, -110%);
+                    background-image: url('/src/images/light-bulb-tablet.svg');
+                }
             }
         }
         &:nth-child(4) {
             &::before {
                 content: "";
                 background-image: url('/src/images/star.svg');
-                top: 30%;
+                top: 46px;
                 transform:translate(-50%, -50%);
                 width: 80px;
                 height: 77px;
                 position: absolute;
+                @media (max-width: 1024px) {
+                    width: 67px;
+                    height: 65px;
+                    transform: translate(-50%, -119%);
+                    background-image: url('/src/images/star-tablet.svg');
+                }
             }
         }
         &:nth-child(5) {
             &::before {
                 content: "";
                 background-image: url('/src/images/Chech-mark.svg');
-                top: 30%;
+                top: 46px;
                 transform:translate(-50%, -50%);
                 width: 77px;
                 height: 82px;
                 position: absolute;
+                @media (max-width: 1024px) {
+                    width: 65px;
+                    height: 68px;
+                    transform: translate(-53%, -117%);
+                    background-image: url('/src/images/Check-mark-tablet.svg');
+                }
             }
         }
         &:nth-child(6) {
             &::before {
                 content: "";
                 background-image: url('/src/images/truck.svg');
-                top: 30%;
+                top: 46px;
                 transform:translate(-50%, -50%);
                 width: 86px;
                 height: 64px;
                 position: absolute;
+                @media (max-width: 1024px) {
+                    width: 72px;
+                    height: 56px;
+                    transform: translate(-50%, -129%);
+                    background-image: url('/src/images/truck-tablet.svg');
+                }
             }
         }
         @media (max-width: 1024px) {
-            max-width: 290px;
+            padding-top: 88px;
+            max-width: 315px;
         }
         @media (max-width: 900px) {
             max-width: 100%;
@@ -96,9 +134,13 @@
     &__title {
         text-transform: uppercase;
         color: #2D3033;
+        // margin-top: 20px;
     }
     &__paragraph {
         color: #6C7279;
-        margin-top: 50px;
+        margin-top: 43px;
+        @media (max-width: 1024px) {
+            margin-top: 23px;
+        }
     }
 }

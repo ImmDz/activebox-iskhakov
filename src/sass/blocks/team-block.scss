@@ -1,13 +1,13 @@
 .team-block {
-    margin-top: 120px;
+    margin-top: 114px;
+    @media (max-width: 1024px) {
+        margin-top: 76px;
+    }
     &__list {
         display: flex;
         justify-content: center;
         list-style: none;
         gap: 30px;
-        @media (max-width: 1024px) {
-            margin-top: 80px;
-        }
         @media (max-width: 900px) {
             flex-direction: column;
             align-items: center;
@@ -24,15 +24,16 @@
         width: 100%;
     }
     &__list-title {
-        margin-top: 25px;
+        margin-top: 27px;
         text-transform: capitalize;
+        font-weight: 700;
     }
     &__list-paragraph {
-        margin-top: 10px;
+        margin-top: 7px;
         color: #FF4343;
         text-transform: uppercase;
         &:nth-child(2n) {
-            margin-top: 40px;
+            margin-top: 18px;
             color: #000000;
             text-transform: none;
         }
@@ -40,14 +41,22 @@
     &__sublist {
         display: flex;
         list-style: none;
-        margin-top: 50px;
+        margin-top: 36px;
         text-align: center;
-        gap: 5px;
+        gap: 4px;
+        @media (max-width: 1024px) {
+            margin-top: 42px;
+        }
     }
     &__sublist-item {
         padding: 10px;
         border: 1px solid #C6CBCD;
         width: 40px;
         height: 40px;
+        @media (max-width: 1024px) {
+            width: 33px;
+            height: 33px;
+            padding: 6px;
+        }
     }
 }

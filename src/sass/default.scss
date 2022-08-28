@@ -24,9 +24,9 @@ main {
 .container {
     max-width: 1170px;
     margin: 0 auto;
-    padding: 0 15px;
+    // padding: 0 15px;
     @media (max-width: 1024px) {
-        max-width: 900px;
+        max-width: 984px;
     }
 }
 
@@ -54,6 +54,10 @@ main {
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
+    @media (max-width: 1024px) {
+      font-size: 18px;
+      line-height: 21px;
+    }
 }
 
 button {
