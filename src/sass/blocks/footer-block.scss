@@ -84,9 +84,13 @@
         border: 1px solid #C6CBCD;;
         padding: 8px 3px 6px 3px;
         min-width: 40px;
+        cursor: pointer;
         @media (max-width: 1024px) {
             padding: 5px;
             min-width: 34px;
+        }
+        &:hover {
+            box-shadow: 4px 4px 30px #fff;
         }
     }
     &__copyright-text {

@@ -58,5 +58,11 @@
             margin-top: 15px;
             padding: 27px 0;
         }
+        &:active {
+            box-shadow: 4px 4px 30px #FF4343;
+        }
+        &:hover {
+            background-color: #E71414;
+        }
     }
 }

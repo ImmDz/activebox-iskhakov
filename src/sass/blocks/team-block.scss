@@ -91,6 +91,7 @@
         border: 1px solid #C6CBCD;
         width: 40px;
         height: 40px;
+        cursor: pointer;
         @media (max-width: 1024px) {
             width: 33px;
             height: 33px;
@@ -100,6 +101,9 @@
             width: 40px;
             height: 40px;
             padding: 9px;
+        }
+        &:hover {
+            box-shadow: 4px 4px 30px #1877f2;
         }
     }
 }
