@@ -1,39 +1,56 @@
 .features-block {
+    margin-top: 116px;
+    @media (max-width: 1024px) {
+        margin-top: 79px;
+    }
+    @media (max-width: 320px) {
+        margin-top: 40px;
+    }
     &__list {
-        padding-top: 120px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         list-style: none;
         text-align: center;
-        row-gap: 92px;
+        row-gap: 90px;
         @media (max-width: 1024px) {
-            row-gap: 90px;
+            row-gap: 50px;
         }
         @media (max-width: 900px) {
             flex-direction: column;
             align-items: center;
         }
+        @media (max-width: 320px) {
+            gap: 42px;
+        }
     }
     &__list-item {
         max-width: 370px;
-        // flex-basis: 32%;
-        padding-top: 147px;
+        padding-top: 150px;        
         position: relative;
+        &::before {
+            content: "";
+            width: 100px;
+            height: 100px;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            top: 0;
+            position: absolute;
+            
+        }
         &:nth-child(1) {
             &::before {
-                content: "";
                 background-image: url('/src/images/pen.svg');
-                top: 46px;
-                transform: translate(-50%, -50%);
-                width: 76px;
-                height: 76px;
-                position: absolute;
                 @media (max-width: 1024px) {
-                    width: 64px;
-                    height: 64px;
-                    transform: translate(-50%, -119%);
+                    width: 85px;
+                    height: 85px;
                     background-image: url('/src/images/pen-tablet.svg');
+                }
+                @media (max-width: 320px) {
+                    width: 76px;
+                    height: 76px;
+                    background-image: url('/src/images/pen-mobile.svg');
                 }
             }
             
@@ -41,106 +58,105 @@
         &:nth-child(2) {
             &::before {
                 content: "";
-                background-image: url('/src/images/desktop.svg');
-                top: 46px;
-                transform:translate(-50%, -50%);
-                width: 85px;
-                height: 77px;
-                position: absolute;
+                background-image: url('/src/images/desk.svg');
                 @media (max-width: 1024px) {
-                    width: 72px;
-                    height: 65px;
-                    transform: translate(-50%, -119%);
-                    background-image: url('/src/images/desktop-tablet.svg');
+                    width: 85px;
+                    height: 85px;
+                    background-image: url('/src/images/desk-tablet.svg');
+                }
+                @media (max-width: 320px) {
+                    width: 76px;
+                    height: 76px;
+                    background-image: url('/src/images/desk-mobile.svg');
                 }
             }
         }
         &:nth-child(3) {
             &::before {
-                content: "";
-                background-image: url('/src/images/light-bulb.svg');
-                top: 46px;
-                transform:translate(-50%, -50%);
-                width: 68px;
-                height: 90px;
-                position: absolute;
+                background-image: url('/src/images/bulb.svg');
                 @media (max-width: 1024px) {
-                    width: 57px;
+                    width: 85px;
+                    height: 85px;
+                    background-image: url('/src/images/bulb-tablet.svg');
+                }
+                @media (max-width: 320px) {
+                    width: 76px;
                     height: 76px;
-                    transform: translate(-50%, -110%);
-                    background-image: url('/src/images/light-bulb-tablet.svg');
+                    background-image: url('/src/images/bulb-mobile.svg');
                 }
             }
         }
         &:nth-child(4) {
             &::before {
-                content: "";
                 background-image: url('/src/images/star.svg');
-                top: 46px;
-                transform:translate(-50%, -50%);
-                width: 80px;
-                height: 77px;
-                position: absolute;
                 @media (max-width: 1024px) {
-                    width: 67px;
-                    height: 65px;
-                    transform: translate(-50%, -119%);
+                    width: 85px;
+                    height: 85px;
                     background-image: url('/src/images/star-tablet.svg');
+                }
+                @media (max-width: 320px) {
+                    width: 76px;
+                    height: 76px;
+                    background-image: url('/src/images/star-mobile.svg');
                 }
             }
         }
         &:nth-child(5) {
             &::before {
-                content: "";
-                background-image: url('/src/images/Chech-mark.svg');
-                top: 46px;
-                transform:translate(-50%, -50%);
-                width: 77px;
-                height: 82px;
-                position: absolute;
+                background-image: url('/src/images/mark.svg');
                 @media (max-width: 1024px) {
-                    width: 65px;
-                    height: 68px;
-                    transform: translate(-53%, -117%);
-                    background-image: url('/src/images/Check-mark-tablet.svg');
+                    width: 85px;
+                    height: 85px;
+                    background-image: url('/src/images/mark-tablet.svg');
+                }
+                @media (max-width: 320px) {
+                    width: 76px;
+                    height: 76px;
+                    background-image: url('/src/images/mark-mobile.svg');
                 }
             }
         }
         &:nth-child(6) {
             &::before {
-                content: "";
                 background-image: url('/src/images/truck.svg');
-                top: 46px;
-                transform:translate(-50%, -50%);
-                width: 86px;
-                height: 64px;
-                position: absolute;
                 @media (max-width: 1024px) {
-                    width: 72px;
-                    height: 56px;
-                    transform: translate(-50%, -129%);
+                    width: 85px;
+                    height: 85px;
                     background-image: url('/src/images/truck-tablet.svg');
+                }
+                @media (max-width: 320px) {
+                    width: 76px;
+                    height: 76px;
+                    background-image: url('/src/images/truck-mobile.svg');
                 }
             }
         }
         @media (max-width: 1024px) {
-            padding-top: 88px;
+            padding-top: 129px;
             max-width: 315px;
         }
         @media (max-width: 900px) {
             max-width: 100%;
         }
+        @media (max-width: 320px) {
+            padding-top: 113px;
+        }
     }
     &__title {
         text-transform: uppercase;
         color: #2D3033;
-        // margin-top: 20px;
     }
     &__paragraph {
         color: #6C7279;
         margin-top: 43px;
         @media (max-width: 1024px) {
             margin-top: 23px;
+        }
+        @media (max-width: 900px) {
+            max-width: 280px;
+        }
+        @media (max-width: 320px) {
+            margin-top: 8px;
         }
     }
 }

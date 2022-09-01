@@ -3,6 +3,9 @@
     @media (max-width: 1024px) {
         margin-top: 79px;
     }
+    @media (max-width: 320px) {
+        margin-top: 335px;
+    }
     &__container {
         max-width: 1510px;
         margin: 0 auto;
@@ -13,23 +16,34 @@
     &__slider-item {
         display: flex;
         align-items: center;
-        gap: 50px;
+        gap: 128px;
+        @media (max-width: 1338px) {
+            gap: 84px;
+        }
         @media (max-width: 1024px) {
-            align-items: flex-start;
             gap: 88px;
         }
         @media (max-width: 900px) {
             flex-direction: column;
             text-align: center;
+            align-items: center;
+            gap: 0;
         }
     }
     &__img {
-        width: 741px;
+        max-width: 741px;
+        @media (max-width: 1340px) {
+            max-width: 50%;
+        }
         @media (max-width: 1024px) {
-            width: 502px;
+            max-width: 502px;
         }
         @media (max-width: 900px) {
-            width: 100%;
+            min-width: 100%;
+        }
+        @media (max-width: 502px) {
+            min-width: none;
+            max-width: 100%;
         }
     }
     &__info {
@@ -37,10 +51,19 @@
         flex-direction: column;
         max-width: 530px;
         color: #ffffff;
-        padding: 11px 0 0 79px;
+        padding-top: 11px;
         @media (max-width: 1024px) {
             max-width: 307px;
             padding: 62px 0 0 0;
+            place-self: flex-start;
+        }
+        @media (max-width: 900px) {
+            place-self: center;
+            padding: 30px 0 100px 0;
+            max-width: 275px;
+        }
+        @media (max-width: 320px) {
+            padding-top: 23px;
         }
     }
     &__title {
@@ -66,6 +89,9 @@
             line-height: 14px;
             margin-top: 16px;
         }
+        @media (max-width: 900px) {
+            margin-top: 30px;
+        }
     }
     &__list-control {
         display: flex;
@@ -74,8 +100,12 @@
         list-style: none;
         margin-top: 28px;
         @media (max-width: 1024px) {
-            gap: 24px;
-            margin-top: 19px;
+            gap: 23px;
+            margin-top: 18px;
+        }
+        @media (max-width: 320px) {
+            gap: 18px;
+            margin-top: 17px;
         }
     }
     &__button-control {
@@ -89,8 +119,8 @@
             background-color: #7E5D6F;
         }
         @media (max-width: 1024px) {
-            width: 11px;
-            height: 11px;
+            width: 12px;
+            height: 12px;
         }
     }
 }
